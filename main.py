@@ -51,13 +51,18 @@ def starter():
             print('Invalid choice')
 
 
+def go_dutch_panel():
+    print('Select:\n1)')
+
+
 def user_panel(username):
-    user_input = int(input('Select:\n1)Beginner\t2)Serious Budgeter\t3)Business-Owner\t4)Sign out'))
+    user_input = int(input('Select:\n1)\t2)Go Dutch!\t3)Business-Owner\t4)Sign out'))
     match user_input:
         case 1:
             print('Choose a plan:\n1)Envelope')
         case 2:
-            print('Choose a plan:\n1)Envelope')
+            print('Go Dutch!')
+            go_dutch_panel()
         case 3:
             print('Choose a plan:\n1)Envelope')
         case 4:
