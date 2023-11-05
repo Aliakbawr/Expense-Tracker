@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c2504f3-82e0-498f-ba11-6db343f5ff36" name="Changes" comment="Sign-Up and Sign-in using sqlite3 added">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_28_2023_4_59_PM_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/classes.py" afterDir="false" />
     </list>

@@ -35,10 +35,11 @@ class Member:
 
 
 class Expense:
-    def __init__(self, description, amount, participants):
+    def __init__(self, description, amount, participants, spender):
         self.description = description
         self.amount = amount
         self.participants = participants
+        self.spender = spender
 
     def individual_share(self):
         return self.amount / len(self.participants)
@@ -46,6 +47,7 @@ class Expense:
     def __str__(self):
         return f'''
         Description: {self.description}
+        Spender: {self.spender}
         Amount: {self.amount}
         Participants: {self.participants}'''
 
@@ -92,10 +94,15 @@ def add_expense_panel(group):
             case 3:
                 break
 
-    expense = Expense(expense_name, expense_amount, expense_participants)
+    expense = Expense(expense_name, expense_amount, expense_participants, spender)
     spender.add_expense(expense)
 
     print('Expense information:\n' + expense.__str__())
+
+
+def calculate_group_shares(group: Group):
+    for expense in group:
+        
 
 
 person1 = Member("Alice")
